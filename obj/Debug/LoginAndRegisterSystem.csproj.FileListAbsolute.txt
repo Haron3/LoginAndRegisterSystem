@@ -1,0 +1,15 @@
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csprojAssemblyReference.cache
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.LoginForm.resources
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.Properties.Resources.resources
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.GenerateResource.cache
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.CoreCompileInputs.cache
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\LoginAndRegisterSystem.exe.config
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\LoginAndRegisterSystem.exe
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\LoginAndRegisterSystem.pdb
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.exe
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.pdb
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.dll
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.xml
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.CopyComplete
