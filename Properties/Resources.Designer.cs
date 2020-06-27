@@ -103,9 +103,19 @@ namespace LoginAndRegisterSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sing_in_button {
+        internal static System.Drawing.Bitmap sign_in_button {
             get {
-                object obj = ResourceManager.GetObject("sing_in_button", resourceCulture);
+                object obj = ResourceManager.GetObject("sign_in_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sign_up_button {
+            get {
+                object obj = ResourceManager.GetObject("sign_up_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,0 +1,15 @@
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\LoginAndRegisterSystem.exe.config
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\LoginAndRegisterSystem.exe
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\LoginAndRegisterSystem.pdb
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\EntityFramework.dll
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\EntityFramework.SqlServer.dll
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\EntityFramework.xml
+D:\Code\C# Projects\LoginAndRegisterSystem\bin\Release\EntityFramework.SqlServer.xml
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.LoginForm.resources
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.Properties.Resources.resources
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.RegisterForm.resources
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.csproj.GenerateResource.cache
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.csproj.CoreCompileInputs.cache
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.csproj.CopyComplete
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.exe
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.pdb

@@ -20,8 +20,12 @@ namespace LoginAndRegisterSystem
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
-            label5.Visible = false;
             KeyPreview = true;
+
+            if (Control.IsKeyLocked(Keys.CapsLock))
+                label5.Visible = true;
+            else
+                label5.Visible = false;
 
             if (!CheckDatabaseExists(new SqlConnection(@"data source=(localdb)\MSSQLLocalDB;Initial Catalog=Users;Integrated Security=True;"), "Users"))
                 using (var context = new UsersDbContext()) { context.Users.Add(new User(0, "admin", "admin")); }
@@ -59,7 +63,10 @@ namespace LoginAndRegisterSystem
 
         private void LoginForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (Control.IsKeyLocked(Keys.CapsLock))
+            
+            if (e.KeyValue == (char)Keys.Enter)
+                pictureBox3_Click(null, null);
+            else if(Control.IsKeyLocked(Keys.CapsLock))
                 label5.Visible = true;
             else
                 label5.Visible = false;
@@ -83,8 +90,15 @@ namespace LoginAndRegisterSystem
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Trim().Length > 0 && textBox2.Text.Trim().Length > 0)
+            textBox1.Text = textBox1.Text.Trim();
+            textBox1.SelectionStart = textBox1.TextLength;
+
+            textBox2.Text = textBox2.Text.Trim();
+            textBox2.SelectionStart = textBox2.TextLength;
+
+            if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0)
             {
+                Cursor.Current = Cursors.WaitCursor;
                 try
                 {
                     SqlConnection con = new SqlConnection(@"data source=(localdb)\MSSQLLocalDB;Initial Catalog=Users;Integrated Security=True;");
@@ -93,25 +107,34 @@ namespace LoginAndRegisterSystem
                     sqa.Fill(dt);
 
                     if (dt.Rows.Count >= 1)
+                    {
                         MessageBox.Show("You successfully loged in!", "Success!",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        textBox1.Text = string.Empty;
+                        textBox2.Text = string.Empty;
+                    }
                     else
                     {
                         MessageBox.Show("Username or Password is wrong. Enter correct data or Register.", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        textBox2.Text = string.Empty;
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBox2.Text = "";
                     }
 
                     con.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Database error. Try again.\n\n{ex.Message}", "Error");
+                    MessageBox.Show($"Database error. Try again.\n\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                Cursor.Current = Cursors.Default;
             }
             else
+            {
                 MessageBox.Show("Enter correct data.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox2.Text = "";
+            }
         }
 
         private static bool CheckDatabaseExists(SqlConnection tmpConn, string databaseName)
@@ -140,6 +163,23 @@ namespace LoginAndRegisterSystem
                 result = false;
             }
             return result;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm regForm = new RegisterForm();
+            regForm.Closed += (s, args) => this.Close();
+            regForm.Show();
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBox1.Text = textBox1.Text.Trim();
+                textBox1.SelectionStart = textBox1.TextLength;
+            }
         }
     }
 }

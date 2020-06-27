@@ -1,4 +1,3 @@
-D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csprojAssemblyReference.cache
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.LoginForm.resources
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.Properties.Resources.resources
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.GenerateResource.cache
@@ -13,3 +12,4 @@ D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.SqlServer.d
 D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.xml
 D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.SqlServer.xml
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.CopyComplete
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.RegisterForm.resources

@@ -97,18 +97,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(94, 379);
+            this.label3.Location = new System.Drawing.Point(84, 379);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 16);
+            this.label3.Size = new System.Drawing.Size(195, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Does not have account?";
+            this.label3.Text = "Does not have an account?";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::LoginAndRegisterSystem.Properties.Resources.sing_in_button;
+            this.pictureBox3.Image = global::LoginAndRegisterSystem.Properties.Resources.sign_in_button;
             this.pictureBox3.Location = new System.Drawing.Point(119, 236);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(124, 45);
@@ -162,6 +163,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(235, 26);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // panel2
             // 
@@ -222,6 +224,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             this.panel1.ResumeLayout(false);

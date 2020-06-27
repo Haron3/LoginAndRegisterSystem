@@ -130,7 +130,10 @@
   <data name="password_visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-invisible-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sing_in_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="sign_in_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thin-gray-signin-button-hi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sign_up_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sign-up-button-png-sign-up-button-png-image-28471-600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
