@@ -23,6 +23,7 @@ namespace LoginAndRegisterSystem
 
             KeyPreview = true;
 
+            // Checking if caps lock is on
             if (Control.IsKeyLocked(Keys.CapsLock))
                 label5.Visible = true;
             else
@@ -32,6 +33,7 @@ namespace LoginAndRegisterSystem
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            // Going back ot login form
             this.Hide();
             LoginForm logForm = new LoginForm();
             logForm.Closed += (s, args) => this.Close();
@@ -55,6 +57,7 @@ namespace LoginAndRegisterSystem
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            // Editing all textBoxes
             textBox1.Text = textBox1.Text.Trim();
             textBox1.SelectionStart = textBox1.TextLength;
 
@@ -64,6 +67,7 @@ namespace LoginAndRegisterSystem
             textBox3.Text = textBox3.Text.Trim();
             textBox3.SelectionStart = textBox3.TextLength;
 
+            // If data is valid
             if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox2.Text == textBox3.Text)
             {
                 Cursor.Current = Cursors.WaitCursor;
@@ -74,13 +78,16 @@ namespace LoginAndRegisterSystem
                     DataTable dt = new DataTable();
                     sqa.Fill(dt);
 
+                    // If account with this login is already exist
                     if (dt.Rows.Count >= 1)
                     {
                         DialogResult result = MessageBox.Show("User already exist. If it's your account, do you want to Sign In?", "Error",
                             MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
+                        // If user pressed Yes
                         if (result == DialogResult.Yes)
                         {
+                            // Going back to login form
                             this.Hide();
                             LoginForm logForm = new LoginForm();
                             logForm.Closed += (s, args) => this.Close();
@@ -89,6 +96,7 @@ namespace LoginAndRegisterSystem
                     }
                     else
                     {
+                        // Adding new user
                         using (var context = new UsersDbContext())
                         {
                             context.Users.Add(new User(0, textBox1.Text, textBox2.Text));
@@ -98,6 +106,7 @@ namespace LoginAndRegisterSystem
                         MessageBox.Show($"You successfully registered an account with Login: {textBox1.Text}.", "Success!",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        // Going back to Login form
                         this.Hide();
                         LoginForm logForm = new LoginForm();
                         logForm.Closed += (s, args) => this.Close();
@@ -108,16 +117,19 @@ namespace LoginAndRegisterSystem
                 }
                 catch (Exception ex)
                 {
+                    // If something goes wrong
                     MessageBox.Show($"Database error. Try again.\n\n{ex.Message}", "Error");
                 }
 
                 Cursor.Current = Cursors.Default;
             }
+            // If passwords does not matche
             else if (textBox2.Text != textBox3.Text)
             {
                 MessageBox.Show("Passwords do not match.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox3.Text = string.Empty;
             }
+            // If data is invalid
             else
             {
                 MessageBox.Show("Enter correct data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -129,6 +141,7 @@ namespace LoginAndRegisterSystem
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            // Visible/Invisible password logic
             if (passwordVisible)
             {
                 passwordVisible = false;
@@ -157,6 +170,7 @@ namespace LoginAndRegisterSystem
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
+            // Preventing making Enters in textBox
             if (e.KeyCode == Keys.Enter)
             {
                 textBox1.Text = textBox1.Text.Trim();
@@ -166,6 +180,7 @@ namespace LoginAndRegisterSystem
 
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
+            // Preventing making Enters in textBox
             if (e.KeyCode == Keys.Enter)
             {
                 textBox2.Text = textBox2.Text.Trim();
@@ -175,6 +190,7 @@ namespace LoginAndRegisterSystem
 
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
+            // Preventing making Enters in textBox
             if (e.KeyCode == Keys.Enter)
             {
                 textBox3.Text = textBox3.Text.Trim();
