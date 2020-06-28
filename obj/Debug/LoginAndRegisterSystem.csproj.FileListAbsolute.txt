@@ -13,4 +13,3 @@ D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.xml
 D:\Code\C# Projects\LoginAndRegisterSystem\bin\Debug\EntityFramework.SqlServer.xml
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csproj.CopyComplete
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.RegisterForm.resources
-D:\Code\C# Projects\LoginAndRegisterSystem\obj\Debug\LoginAndRegisterSystem.csprojAssemblyReference.cache

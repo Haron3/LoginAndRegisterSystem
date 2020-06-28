@@ -13,3 +13,4 @@ D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.cs
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.csproj.CopyComplete
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.exe
 D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.pdb
+D:\Code\C# Projects\LoginAndRegisterSystem\obj\Release\LoginAndRegisterSystem.csprojAssemblyReference.cache
